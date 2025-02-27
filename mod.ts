@@ -1,3 +1,8 @@
+/**
+ * Encode a string using ROT13.
+ *
+ * @example encode("Hello, world!") // "Uryyb, jbeyq!"
+ */
 export function encode(string: string): string {
   return string
     .replace(/[a-z]/g, rotateLower)
@@ -9,6 +14,11 @@ export function encode(string: string): string {
     });
 }
 
+/**
+ * Decode a string using ROT13.
+ *
+ * @example decode("Uryyb, jbeyq!") // "Hello, world!"
+ */
 export function decode(string: string): string {
   return string
     .replace(/[a-z]/g, rotateLower)
