@@ -1,4 +1,4 @@
-export function encode(string: string) {
+export function encode(string: string): string {
   return string
     .replace(/[a-z]/g, rotateLower)
     .replace(/[A-Z]/g, rotateUpper)
@@ -9,7 +9,7 @@ export function encode(string: string) {
     });
 }
 
-export function decode(string: string) {
+export function decode(string: string): string {
   return string
     .replace(/[a-z]/g, rotateLower)
     .replace(/[A-Z]/g, rotateUpper)
