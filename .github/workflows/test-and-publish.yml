@@ -24,6 +24,6 @@ jobs:
 
       - if: ${{ github.ref_name == 'main' }}
         run: deno publish --dry-run
-      
+
       - if: ${{ github.ref_name == 'release' }}
         run: deno publish
